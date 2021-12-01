@@ -359,22 +359,21 @@ a {
     opacity: 1;
     padding: 0;
   }
-}
 
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
-  margin-top: 2rem;
-  padding: 0;
-}
+  .collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 2rem;
+    padding: 0;
+  }
 
-.collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
-  margin-top: 2rem;
-  padding: 0;
+  .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 2rem;
+    padding: 0;
+  }
 }
-
 @media screen and (min-width: 1024px) {
   .nav__item > a {
     font-size: 1.5vw;
