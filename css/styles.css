@@ -139,7 +139,9 @@ a {
   width: 45px;
   height: 45px;
 }
-
+.icon--white {
+  fill: white;
+}
 .icon--primary {
   fill: var(--color-heading-one);
 }
@@ -263,6 +265,121 @@ a {
   flex-wrap: wrap;
   margin-top: 10vh;
   margin-bottom: 10rem;
+}
+/* Collapsible */
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 3px 2px white;
+  border-radius: 5px;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.7s;
+}
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.nav__list {
+  width: 100%;
+}
+
+.nav__item {
+  padding-left: 0.5rem;
+  border-bottom: 1px solid #222;
+  line-height: 2.5rem;
+}
+
+.nav__item > a {
+  color: #aaa;
+  text-shadow: 0 0 3px #aaa;
+  font-size: small;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: white;
+  text-shadow: 0 0 4px white;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    background-color: #111;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+  }
+
+  .nav__item {
+    border: none;
+    margin: 2rem;
+  }
+
+  .nav__item > a {
+    font-size: 2vw;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    max-height: 100vh;
+    opacity: 1;
+    padding: 0;
+  }
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__item > a {
+    font-size: 1.5vw;
+    margin: 1rem 1rem 1rem 1rem;
+  }
 }
 
 /* Lists */
