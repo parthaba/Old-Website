@@ -17,10 +17,10 @@
   <body>
     <nav class="nav collapsible">
       <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Resume</a></li>
-        <li class="nav__item"><a href="#">Education </a></li>
-        <li class="nav__item"><a href="#">Projects</a></li>
+        <li class="nav__item"><a href="#Resume">Resume</a></li>
+        <li class="nav__item"><a href="#Education">Education </a></li>
         <li class="nav__item"><a href="#">Experience</a></li>
+        <li class="nav__item"><a href="#">Projects</a></li>
         <li class="nav__item"><a href="#">Skills</a></li>
       </ul>
       <svg class="icon icon--white nav__toggler right-side">
@@ -28,9 +28,9 @@
       </svg>
     </nav>
     <div class="header">
-      <h1 class="glow">Ameen Parthab</h1>
+      <h1 class="glow center">Ameen Parthab</h1>
       <h2>
-        <a
+        <a id="Resume"
           class="typewrite"
           data-period="1200"
           data-type='[ "Dedicated", "Hardworking", "Professional", "Looking for an internsh" ]'
@@ -38,15 +38,55 @@
           <span class="wrap"></span>
         </a>
       </h2>
-      <a href="images/Resume Ameen Parthab.pdf" download class="btn btn--light"
+      <a href="images/Resume Ameen Parthab.pdf" download id="Education" class="btn btn--light"
         >Download Resume</a
       >
+    </div>
+    <div class="education">
+      <h3 class="glow left">Education</h3>
+      <ul class="education__list">
+        <li>
+          <h4 class="glow eduh4">University of Toronto</h4>
+          <ul class="education__list__list">
+            <li>President's Scholar of Excellence ($10,000)</li>
+            <li>CGPA: 3.88</li>
+            <li>
+              TLI: One of twenty students chosen by the <br />
+              computer science department for leadership skills
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4 class="glow list-odd">Google IT Support Certificate</h4>
+          <ul>
+            <li class="odd-list-item">
+              Extensive teaching in computer networking, OSes, sysadmin, and
+              data security
+            </li>
+            <li class="odd-list-item">
+              8 month certification process with tests, VMs, and networking
+              opportunities
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h4 class="glow eduh4">UofT LearnAI</h4>
+          <ul class="education__list__list">
+            <li></li>
+            <li>
+              UofT course teaching students how to create and manage AI software
+            </li>
+            <li>Have experience in Numpy, Panda, neural networks, and NLP</li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="three-cards">
       <div class="card-container">
         <div class="card card--primary">
           <header class="card__header">
-            <h3 class="card-container__name">Entry</h3>
+            <h4 class="card-container__name">Tutor</h3>
           </header>
           <div class="card__body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -57,7 +97,7 @@
       <div class="card-container card-container--center">
         <div class="card card--secondary">
           <header class="card__header">
-            <h3 class="card-container__name">Entry</h3>
+            <h4 class="card-container__name">Senso.ai</h3>
           </header>
           <div class="card__body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -68,7 +108,7 @@
       <div class="card-container">
         <div class="card card--primary">
           <header class="card__header">
-            <h3 class="card-container__name">Entry</h3>
+            <h4 class="card-container__name">Debate Coach</h3>
           </header>
           <div class="card__body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
