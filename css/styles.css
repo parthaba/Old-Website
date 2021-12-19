@@ -28,7 +28,7 @@ h1 {
 }
 
 .glow {
-  text-shadow: 0 0 5px #bbbbbb, 0 0 8px #9e9e9e;
+  text-shadow: 0 0 5px #bbbbbb, 0 0 40px #9e9e9e;
 }
 .center {
   text-align: center;
@@ -49,7 +49,7 @@ h1 {
 }
 
 .glow-pink {
-  text-shadow: 0 0 5px #bbbbbb, 0 0 8px #f390ee;
+  text-shadow: 0 0 5px #bbbbbb, 0 0 40px #f390ee;
   color: white;
 }
 
@@ -455,7 +455,7 @@ a {
 
 .list-odd {
   color: rgb(255, 96, 96);
-  text-shadow: 0 0 10px red;
+  text-shadow: 0 0 40px red;
   place-content: right;
   text-align: right;
   margin-right: 10%;
@@ -547,7 +547,7 @@ a {
 h5 {
   font-size: 3.5vw;
   color: lightblue;
-  text-shadow: 0 0 5px lightblue;
+  text-shadow: 0 0 10px lightblue;
   padding-top: none;
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -555,7 +555,7 @@ h5 {
 h6 {
   font-size: 3vw;
   color: white;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 10px white;
   padding-top: none;
   margin: 1rem 0rem 1rem 0rem;
 }
