@@ -1,13 +1,14 @@
 /* Defining fundamental variables */
 :root {
   /* overall color scheme */
-  --color-primary: rgb(69, 42, 131);
+  --color-primary: rgb(50, 50, 80);
   --color-accent: red;
   /* color scheme for text*/
   --color-heading-one: #fff;
   --color-heading-two-a: rgb(0, 195, 255);
   --color-heading-two-b: rgb(255, 0, 212);
-  --color-heading-three: rgba(204, 255, 228);
+  --color-heading-two-b-dim: rgb(236, 0, 197);
+  --color-heading-three: rgb(134, 223, 175);
   --color-body: lightgrey;
 }
 
@@ -17,7 +18,7 @@ html {
 
 body {
   font-size: 3vw;
-  background: linear-gradient(to right, black, rgba(30, 18, 59)), fixed;
+  background: linear-gradient(to right, black, rgb(30, 15, 80)), fixed;
 }
 
 /* Headers (Mobile) */
@@ -28,7 +29,7 @@ h1 {
 }
 
 .glow {
-  text-shadow: 0 0 5px #bbbbbb, 0 0 8px #9e9e9e;
+  text-shadow: 0 0 5px #bbbbbb, 0 0 20px white;
 }
 .center {
   text-align: center;
@@ -48,14 +49,13 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.glow-pink {
-  text-shadow: 0 0 5px #bbbbbb, 0 0 8px #f390ee;
-  color: white;
-}
-
 h2 {
   font-size: 5vw;
   color: --color-heading-two-a;
+}
+
+.white {
+  color: white;
 }
 .blue {
   color: var(--color-heading-two-a);
@@ -69,6 +69,10 @@ h3 {
   font-size: 8vw;
   color: var(--color-heading-three);
   margin-bottom: 0;
+  text-shadow: 0 0 20px var(--color-heading-three);
+}
+
+.glow-green {
 }
 
 .eduh4 {
@@ -200,11 +204,13 @@ a {
   border-radius: 20px;
   border: 0;
   box-shadow: 0 0 10px pink;
+  background-color: var(--color-heading-two-b);
   margin-bottom: 1rem;
+  color: rgb(50, 50, 80);
 }
 
 .btn:hover {
-  background: rgb(245, 127, 215);
+  background: rgb(245, 145, 220);
 }
 
 .btn--accent {
@@ -267,6 +273,11 @@ a {
 }
 .traderauto {
   text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.traderauto:hover {
+  color: var(--color-heading-two-b-dim);
 }
 
 @media screen and (min-width: 1024px) {
@@ -320,6 +331,7 @@ a {
 /* Navigation bar */
 .nav {
   display: flex;
+  background: linear-gradient(to right, black, rgb(30, 15, 80)), fixed;
   justify-content: space-between;
   flex-wrap: wrap-revlisterse;
 }
@@ -450,22 +462,17 @@ a {
 .education__list__list {
   list-style: none;
   padding-left: 21%;
-  text-shadow: 0 0 3px #fff;
+  text-shadow: 0 0 10px #fff;
 }
 
 .list-odd {
-  color: rgb(255, 96, 96);
-  text-shadow: 0 0 10px red;
-  place-content: right;
-  text-align: right;
-  margin-right: 10%;
+  color: rgb(184, 233, 252);
+  text-shadow: 0 0 20px rgb(184, 233, 252);
 }
 
 .odd-list-item {
-  text-align: right;
-  margin-right: 15%;
-  color: rgb(255, 96, 96);
-  text-shadow: 0 0 4px red;
+  color: rgb(184, 233, 252);
+  text-shadow: 0 0 20px rgb(184, 233, 252);
   list-style: none;
 }
 
@@ -521,12 +528,12 @@ a {
   display: inline;
   padding-left: 1.5vw;
   color: lightblue;
-  text-shadow: 0 0 4px lightblue;
+  text-shadow: 0 0 10px lightblue;
 }
 
 .projects__button:hover {
-  color: red;
-  text-shadow: 0 0 7px red;
+  color: var(--color-heading-two-b);
+  text-shadow: 0 0 10px var(--color-heading-two-b);
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -539,15 +546,15 @@ a {
 }
 
 .toggle {
-  color: red;
-  text-shadow: 0 0 7px red;
+  color: var(--color-heading-two-b);
+  text-shadow: 0 0 10px var(--color-heading-two-b);
   transition: all 0.3s;
 }
 
 h5 {
   font-size: 3.5vw;
   color: lightblue;
-  text-shadow: 0 0 5px lightblue;
+  text-shadow: 0 0 13px lightblue;
   padding-top: none;
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -555,7 +562,7 @@ h5 {
 h6 {
   font-size: 3vw;
   color: white;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 13px white;
   padding-top: none;
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -567,22 +574,35 @@ h6 {
 }
 
 .projects__body {
-  border: 0.7vw solid white;
+  border: 0.4vw solid white;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to right, black, rgb(49, 15, 80)), fixed;
   margin-bottom: 2vh;
 }
 
 .projects__body__list {
   list-style: none;
-  padding-left: 5%;
+  padding-left: 4%;
   padding-bottom: 1%;
-  text-shadow: 0 0 3px #fff;
+  text-shadow: 0 0 10px #fff;
   font-size: 80%;
 }
 
+.list-item-two {
+  padding-left: 6%;
+}
+
+.list-item-three {
+  padding-left: 8%;
+}
+
+.list-item-four {
+  padding-left: 10%;
+}
+
 .projects-list-odd {
-  color: rgb(255, 96, 96);
-  text-shadow: 0 0 10px red;
+  color: var(--color-heading-two-b-dim);
+  text-shadow: 0 0 10px var(--color-heading-two-b-dim);
 }
 
 .github-icon {
