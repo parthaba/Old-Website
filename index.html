@@ -18,8 +18,8 @@
     <ul class="list nav__list collapsible__content">
       <li class="nav__item"><a href="#Resume">Resume</a></li>
       <li class="nav__item"><a href="#Education">Education </a></li>
-      <li class="nav__item"><a href="#">Experience</a></li>
-      <li class="nav__item"><a href="#">Projects</a></li>
+      <li class="nav__item"><a href="#Experience">Experience</a></li>
+      <li class="nav__item"><a href="#Projects">Projects</a></li>
       <li class="nav__item"><a href="#">Skills</a></li>
     </ul>
     <svg class="icon icon--white nav__toggler right-side">
@@ -68,7 +68,7 @@
         <h4 class="glow eduh4">UofT LearnAI</h4>
         <ul class="education__list__list">
           <li></li>
-          <li>
+          <li id="Experience">
             UofT course teaching students how to create and manage AI software
           </li>
           <li>Have experience in Numpy, Panda, neural networks, and NLP</li>
@@ -104,7 +104,7 @@
             <li class="list__item">Developed a MySQL database on AWS RDS for cars, users, payments, etc.</li>
             <li class="list__item">Created a <a class="traderauto" target="_blank"
                 href="https://main.d2c0mw2w964w11.amplifyapp.com/">website</a> using React, hosted on AWS Amplify</li>
-            <li class="list__item">Hosted Java backend code on AWS EC2 instance of Ubuntu</li>
+            <li id="Projects" class="list__item">Hosted Java backend code on AWS EC2 instance of Ubuntu</li>
           </ul>
         </div>
       </div>
@@ -153,13 +153,16 @@
           <li class="projects__body__list projects-list-odd">
             Commissioned by Harthouse Debate Club
           </li>
-          <li class="projects__body__list list-item-two">Created a Python script to automatically access and store data taken from a
+          <li class="projects__body__list list-item-two">Created a Python script to automatically access and store data
+            taken from a
             Heroku platform API
           </li>
-          <li class="projects__body__list projects-list-odd list-item-three">In the process of creating a GUI to better interact with
+          <li class="projects__body__list projects-list-odd list-item-three">In the process of creating a GUI to better
+            interact with
             information
           </li>
-          <li class="projects__body__list list-item-four">Stores and manages information for thousands of debaters, have plans to
+          <li class="projects__body__list list-item-four">Stores and manages information for thousands of debaters, have
+            plans to
             create a MongoDB
           </li>
         </ul>
@@ -188,7 +191,7 @@
             Accessed Senso.AI external loan calculator API to return likelihood of recieving loans
           </li>
           <li class="projects__body__list projects-list-odd list-item-three">
-            Calculated a variety of financial information for users, ie. PTI and TDS Ratio 
+            Calculated a variety of financial information for users, ie. PTI and TDS Ratio
           </li>
           <li class="projects__body__list list-item-four">
             Implemented clean architecture, packaging stategies, and numerous design patterns
@@ -218,11 +221,10 @@
             Wrote using HTML, CSS, JS, and React
           </li>
           <li class="projects__body__list projects-list-odd list-item-three">
-            Implemented signin, signup, and cookies to cache data for repeat users 
+            Implemented signin, signup, and cookies to cache data for repeat users
           </li>
           <li class="projects__body__list list-item-four">
             Fully tested rendering and all user inputs using Jest, Enzyme, and React Testing Library
-            <!-- TODO: What did we use to test? Jest?  -->
           </li>
         </ul>
       </div>
@@ -243,7 +245,7 @@
             Accessed Senso.AI external loan calculator API to return likelihood of recieving loans
           </li>
           <li class="projects__body__list projects-list-odd list-item-three">
-            Calculated a variety of financial information for users, ie. PTI and TDS Ratio 
+            Calculated a variety of financial information for users, ie. PTI and TDS Ratio
           </li>
           <li class="projects__body__list list-item-four">
             Implemented clean architecture, packaging stategies, and numerous design patterns
@@ -283,18 +285,83 @@
         </ul>
       </div>
     </div>
-
-
   </div>
+  <h3 class="left skills-header">Skills</h3>
+  <div class="skills">
+    <div class="skills__grid">
+
+      <div class="skills__box coding grid__title">
+        <h5 class="grid__title__header">
+          <svg class="github-icon">
+            <use xlink:href="images/sprite.svg#code"></use>
+          </svg>
+          Coding
+        </h5>
+      </div>
+      <div class="skills__box coding grid__content">
+        <ul class="skills__list">
+          <li class="skills__list__item">Python, Java, SQL, MATLAB, HTML, CSS, JavaScript, React, R, BASH, Windows PowerShell</li>
+          <li class="skills__list__item">Experience in automating emails, coding Microsoft Excel/Google Sheets and Matplotlib</li>
+          <li class="skills__list__item">Have experience with neural networks and AI. Have expereince optimizing using Numpy and Pandas</li>
+        </ul>
+      </div>
+      <div class="skills__box music grid__title">
+        <h5 class="grid__title__header"> <svg class="github-icon">
+            <use xlink:href="images/sprite.svg#piano"></use>
+          </svg> Music</h5>
+      </div>
+      <div class="skills__box music grid__content">
+      <ul class="skills__list">
+        <li class="skills__list__item">ARCT level piano player</li>
+        <li class="skills__list__item">Have created commissioned music for video games</li>
+        <li class="skills__list__item">Have experience with FL Studio and GarageBand</li>
+      </ul>
+    </div>
+
+      <div class="skills__box business grid__title">
+        <h5 class="grid__title__header"> <svg class="github-icon">
+            <use xlink:href="images/sprite.svg#project"></use>
+          </svg> Business</h5>
+      </div>
+      <div class="skills__box business grid__content">
+        <ul class="skills__list">
+          <li class="skills__list__item">ARCT level piano player</li>
+          <li class="skills__list__item">Have created commissioned music for video games</li>
+          <li class="skills__list__item">Have experience with FL Studio and GarageBand</li>
+        </ul>
+      </div>
+
+      <div class="skills__box debate grid__title">
+        <h5 class="grid__title__header"> <svg class="github-icon">
+            <use xlink:href="images/sprite.svg#podium"></use>
+          </svg>Debate</h5>
+      </div>
+      <div class="skills__box debate grid__content">
+        <ul class="skills__list">
+          <li class="skills__list__item">3rd place team at Harvard’s High School Debate Tournament</li>
+          <li class="skills__list__item">Canada Debate Cup 2nd seeded team and finalist</li>
+          <li class="skills__list__item">North American University Debate Championship Novice finalist</li>
+        </ul>
+      </div>
+      <div class="skills__box awards grid__title">
+        <h5 class="grid__title__header"> <svg class="github-icon">
+            <use xlink:href="images/sprite.svg#presenter"></use>
+          </svg>Awards</h5>
+      </div>
+      <div class="skills__box awards grid__content">a</div>
+
+    </div>
+  </div>
+
+
   <script src="Components/collapsible.js"></script>
   <script src="Components/typescript/typescript.js"></script>
   <script type="text/JavaScript" src="Components/dropdown/dropdown.js"></script>
   <!-- TODO: Make hidden divs not change where github image sends you and fix the fact that sometimes the link isn't attached to the icon? -->
-  <!-- TODO: Make the nav bar correctly point projects to the project section of this page -->
   <!-- TODO: Make projects look better for mobile -->
   <!-- TODO: Make buttons work for mobile -->
-  <!-- TODO: Make lists in project actually look good lmao -->
   <!-- TODO: Fix websites extending page when hidden (probably something with div height of non-collapsible elements in collapsible block or something with overflow?) -->
+  <!-- TODO: Try to get  projects to open length first, then show content-->
 </body>
 
 </html>
