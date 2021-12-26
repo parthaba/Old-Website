@@ -29,7 +29,7 @@ h1 {
 }
 
 .glow {
-  text-shadow: 0 0 5px #bbbbbb, 0 0 20px white;
+  text-shadow: 0 0 5px #bbbbbb, 0 0 40px white;
 }
 .center {
   text-align: center;
@@ -70,9 +70,6 @@ h3 {
   color: var(--color-heading-three);
   margin-bottom: 0;
   text-shadow: 0 0 20px var(--color-heading-three);
-}
-
-.glow-green {
 }
 
 .eduh4 {
@@ -334,6 +331,7 @@ a {
   background: linear-gradient(to right, black, rgb(30, 15, 80)), fixed;
   justify-content: space-between;
   flex-wrap: wrap-revlisterse;
+  z-index: 3;
 }
 
 .nav__list {
@@ -505,9 +503,20 @@ a {
 .projects__whole {
   width: 80%;
   max-height: 0;
-  opacity: 0;
-  transition: all 0.7s;
-  transition-timing-function: linear;
+  -webkit-transform: scale(0%);
+  transform: scale(0%);
+  transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    max-height 50ms 0.2s linear;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.show {
+  max-height: 100vh;
+  transition: transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    max-height 50ms linear;
+  -webkit-transform: scale(100%);
+  transform: scale(100%);
 }
 
 .button-section {
@@ -536,13 +545,6 @@ a {
   text-shadow: 0 0 10px var(--color-heading-two-b);
   transition: all 0.3s;
   cursor: pointer;
-}
-
-.show {
-  max-height: 100vh;
-  opacity: 1;
-  margin-top: 0.5rem;
-  padding: 0;
 }
 
 .toggle {
@@ -618,4 +620,90 @@ h6 {
 .center-github {
   display: inline-flex;
   vertical-align: text-bottom;
+}
+
+/* Skills Grid */
+.skills-header {
+  margin-top: 2rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 40vw 40vw;
+  box-shadow: 0 0 30px white;
+  grid-template-areas:
+    "cd cd"
+    "music bsn"
+    "dbt awd";
+}
+
+.skills__box {
+  border: 6px solid white;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 0 -6px -6px 0;
+}
+
+/* Coding grid */
+.coding {
+  grid-area: cd;
+}
+
+.grid__title {
+  background-color: black;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.grid__title:hover {
+  opacity: 0;
+}
+
+.grid__title__header {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.grid__content {
+  background: black;
+}
+
+.skills__list {
+  padding-top: 3%;
+  padding-left: 0;
+}
+
+.skills__list__item {
+  list-style: none;
+  font-size: 1 rem;
+  color: white;
+  text-shadow: 0px 0px 3px white;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* Music Grid */
+.music {
+  grid-area: music;
+}
+
+/* Business Grid */
+.business {
+  grid-area: bsn;
+}
+
+/* Debate Grid */
+.debate {
+  grid-area: dbt;
+}
+
+/* Awards grid */
+.awards {
+  grid-area: awd;
 }
