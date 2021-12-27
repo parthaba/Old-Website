@@ -20,7 +20,7 @@
       <li class="nav__item"><a href="#Education">Education </a></li>
       <li class="nav__item"><a href="#Experience">Experience</a></li>
       <li class="nav__item"><a href="#Projects">Projects</a></li>
-      <li class="nav__item"><a href="#">Skills</a></li>
+      <li class="nav__item"><a href="#Skills">Skills</a></li>
     </ul>
     <svg class="icon icon--white nav__toggler right-side">
       <use xlink:href="images/sprite.svg#menu"></use>
@@ -239,16 +239,16 @@
         </div>
         <ul>
           <li class="projects__body__list projects-list-odd">
-            Ran on AWS EC2 server with environment variables and encryption to maximize security
+            Created using pure HTML, CSS, JS (no outside libraries as to minimize latency)
           </li>
           <li class="projects__body__list list-item-two">
-            Accessed Senso.AI external loan calculator API to return likelihood of recieving loans
+            Implemented immediate deployment from GitHub
           </li>
           <li class="projects__body__list projects-list-odd list-item-three">
-            Calculated a variety of financial information for users, ie. PTI and TDS Ratio
+            Website is both mobile and desktop friendly
           </li>
           <li class="projects__body__list list-item-four">
-            Implemented clean architecture, packaging stategies, and numerous design patterns
+            Implemented clean architecture and basic packaging strategies
           </li>
         </ul>
       </div>
@@ -279,7 +279,7 @@
           <li class="projects__body__list projects-list-odd list-item-three">
             Stored data for users, cars, purchases, dealerships, loan tables, etc.
           </li>
-          <li class="projects__body__list list-item-four">
+          <li id="Skills" class="projects__body__list list-item-four">
             Implemented code to write to and read from database efficiently
           </li>
         </ul>
@@ -292,7 +292,7 @@
 
       <div class="skills__box coding grid__title">
         <h5 class="grid__title__header">
-          <svg class="github-icon">
+          <svg class="mobile-icon">
             <use xlink:href="images/sprite.svg#code"></use>
           </svg>
           Coding
@@ -300,57 +300,60 @@
       </div>
       <div class="skills__box coding grid__content">
         <ul class="skills__list">
-          <li class="skills__list__item">Python, Java, SQL, MATLAB, HTML, CSS, JavaScript, React, R, BASH, Windows PowerShell</li>
-          <li class="skills__list__item">Experience in automating emails, coding Microsoft Excel/Google Sheets and Matplotlib</li>
-          <li class="skills__list__item">Have experience with neural networks and AI. Have expereince optimizing using Numpy and Pandas</li>
+          <li class="skills__list__item"><wrap class="red">Python</wrap>, Java, <wrap class="red">SQL</wrap>, MATLAB, <wrap class="red">HTML</wrap>, CSS, <wrap class="red">JavaScript</wrap>, <wrap class="gold">React</wrap>, <wrap class="red">R</wrap>, BASH, <wrap class="red">PowerShell</wrap></li>
+          <li class="skills__list__item">Experience in automating emails, coding <wrap class="red">Microsoft Excel</wrap>/Google Sheets and <wrap class="red">Matplotlib</wrap></li>
+          <li class="skills__list__item">Have experience with <wrap class="red">neural networks</wrap> and <wrap class="gold">AI</wrap>. Have expereince optimizing using Numpy and Pandas</li>
         </ul>
       </div>
       <div class="skills__box music grid__title">
-        <h5 class="grid__title__header"> <svg class="github-icon">
+        <h5 class="grid__title__header"> <svg class="mobile-icon">
             <use xlink:href="images/sprite.svg#piano"></use>
           </svg> Music</h5>
       </div>
       <div class="skills__box music grid__content">
       <ul class="skills__list">
-        <li class="skills__list__item">ARCT level piano player</li>
-        <li class="skills__list__item">Have created commissioned music for video games</li>
-        <li class="skills__list__item">Have experience with FL Studio and GarageBand</li>
+        <li class="skills__list__item"><wrap class="gold">ARCT</wrap> level piano player</li>
+        <li class="skills__list__item">Have created <wrap class="red">commissioned</wrap> music for video games</li>
+        <li class="skills__list__item">Have experience with <wrap class="red">FL Studio</wrap> and <wrap class="red">GarageBand</wrap></li>
       </ul>
     </div>
 
       <div class="skills__box business grid__title">
-        <h5 class="grid__title__header"> <svg class="github-icon">
+        <h5 class="grid__title__header"> <svg class="mobile-icon">
             <use xlink:href="images/sprite.svg#project"></use>
           </svg> Business</h5>
       </div>
       <div class="skills__box business grid__content">
         <ul class="skills__list">
-          <li class="skills__list__item">ARCT level piano player</li>
-          <li class="skills__list__item">Have created commissioned music for video games</li>
-          <li class="skills__list__item">Have experience with FL Studio and GarageBand</li>
+          <li class="skills__list__item">National High School Business Competition - <wrap class="bronze">3rd place</wrap> and <wrap class="silver">2nd place</wrap> finish</li>
+          <li class="skills__list__item">Student Starts <wrap class="silver">2nd place</wrap> team</li>
         </ul>
       </div>
 
       <div class="skills__box debate grid__title">
-        <h5 class="grid__title__header"> <svg class="github-icon">
+        <h5 class="grid__title__header"> <svg class="mobile-icon">
             <use xlink:href="images/sprite.svg#podium"></use>
           </svg>Debate</h5>
       </div>
       <div class="skills__box debate grid__content">
         <ul class="skills__list">
-          <li class="skills__list__item">3rd place team at Harvard’s High School Debate Tournament</li>
-          <li class="skills__list__item">Canada Debate Cup 2nd seeded team and finalist</li>
-          <li class="skills__list__item">North American University Debate Championship Novice finalist</li>
+          <li class="skills__list__item"><wrap class="bronze">3rd place</wrap> team at Harvard HS Debate Tournament</li>
+          <li class="skills__list__item">Canada Debate Cup <wrap class="silver">2nd place team</wrap>/finalist</li>
+          <li class="skills__list__item">NA University Debate Championship <wrap class="gold">Novice finalist</wrap></li>
         </ul>
       </div>
       <div class="skills__box awards grid__title">
-        <h5 class="grid__title__header"> <svg class="github-icon">
+        <h5 class="grid__title__header"> <svg class="mobile-icon">
             <use xlink:href="images/sprite.svg#presenter"></use>
           </svg>Awards</h5>
       </div>
-      <div class="skills__box awards grid__content">a</div>
-
-    </div>
+      <div class="skills__box awards grid__content">
+        <ul class="skills__list">
+          <li class="skills__list__item"><wrap class="red">TEDx</wrap> Talk Presenter (on youth voting)</li>
+          <li class="skills__list__item">Duke of Edinburgh <wrap class="gold">Gold Award</wrap></li>
+          <li class="skills__list__item">DECA <wrap class="red">Provincial</wrap> Champion</li>
+        </ul>
+      </div>
   </div>
 
 

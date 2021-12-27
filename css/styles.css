@@ -561,6 +561,12 @@ h5 {
   margin: 1rem 0rem 1rem 0rem;
 }
 
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 8vw;
+  }
+}
+
 h6 {
   font-size: 3vw;
   color: white;
@@ -634,13 +640,18 @@ h6 {
 
 .skills__grid {
   display: grid;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: repeat(3, 36vh);
   grid-template-columns: 40vw 40vw;
   box-shadow: 0 0 30px white;
   grid-template-areas:
     "cd cd"
-    "music bsn"
-    "dbt awd";
+    "awd dbt"
+    "bsn music";
+}
+
+.mobile-icon {
+  width: 3vw;
+  height: 3vw;
 }
 
 .skills__box {
@@ -667,25 +678,45 @@ h6 {
 
 .grid__title__header {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 10vh;
 }
 
 .grid__content {
   background: black;
+  font-size: 1.4vw;
 }
 
 .skills__list {
-  padding-top: 3%;
-  padding-left: 0;
+  padding-top: 5vh;
+  padding-left: 4rem;
 }
 
 .skills__list__item {
-  list-style: none;
   font-size: 1 rem;
   color: white;
   text-shadow: 0px 0px 3px white;
-  text-align: center;
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-left: 1rem;
+}
+
+.red {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+.bronze {
+  color: rgb(133, 83, 34);
+  text-shadow: 0 0 10px rgb(160, 113, 66);
+}
+
+.silver {
+  color: silver;
+  text-shadow: 0 0 10px silver;
+}
+
+.gold {
+  color: gold;
+  text-shadow: 0 0 10px gold;
 }
 
 /* Music Grid */
@@ -706,4 +737,36 @@ h6 {
 /* Awards grid */
 .awards {
   grid-area: awd;
+}
+
+@media screen and (max-width: 768px) {
+  .skills__grid {
+    grid-template-rows: repeat(5, 36vh);
+    grid-template-columns: 80vw;
+    box-shadow: 0 0 30px white;
+    grid-template-areas:
+      "cd"
+      "awd"
+      "dbt"
+      "bsn"
+      "music";
+  }
+  .mobile-icon {
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .grid__content {
+    font-size: 3.5vw;
+  }
+
+  .coding {
+    font-size: 2.8vw;
+  }
+  .skills__list__item {
+    padding-left: 0rem;
+  }
+  .skills__list {
+    padding-left: 2.5rem;
+  }
 }
