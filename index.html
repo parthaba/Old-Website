@@ -11,10 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <nav class="nav collapsible">
+  <nav class="nav collapsible" data-aos="fade-down">
     <ul class="list nav__list collapsible__content">
       <li class="nav__item"><a href="#Resume">Resume</a></li>
       <li class="nav__item"><a href="#Education">Education</a></li>
@@ -27,8 +28,8 @@
     </svg>
   </nav>
   <div class="header">
-    <h1 class="glow center">Ameen Parthab</h1>
-    <h2>
+    <h1 class="glow center" data-aos="fade-up">Ameen Parthab</h1>
+    <h2 data-aos="fade-up">
       <a id="Resume" class="typewrite" data-period="1200"
         data-type='[ "Dedicated", "Hardworking", "Professional", "Looking for an internsh" ]'>
         <span class="wrap"></span>
@@ -37,9 +38,9 @@
     <a href="images/Resume Ameen Parthab.pdf" download id="Education" class="btn">Download Resume</a>
   </div>
   <div class="education">
-    <h3 class="left">Education</h3>
+    <h3 class="left" data-aos="fade-right">Education</h3>
     <ul class="education__list">
-      <li>
+      <li data-aos="fade-right">
         <h4 class="glow eduh4">University of Toronto</h4>
         <ul class="education__list__list">
           <li>President's Scholar of Excellence ($10,000)</li>
@@ -50,7 +51,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li data-aos="fade-right">
         <h4 class="eduh4 list-odd">Google IT Support Certificate</h4>
         <ul class="education__list__list">
           <li class="odd-list-item">
@@ -64,7 +65,7 @@
         </ul>
       </li>
 
-      <li>
+      <li data-aos="fade-right">
         <h4 class="glow eduh4">UofT LearnAI</h4>
         <ul class="education__list__list">
           <li></li>
@@ -76,10 +77,10 @@
       </li>
     </ul>
   </div>
-  <h3 class="left experience">Experience</h3>
+  <h3 class="left experience" data-aos="zoom-in-up">Experience</h3>
   <div class="three-cards">
     <div class="card-container">
-      <div class="card card--primary">
+      <div class="card card--primary" data-aos="zoom-in-up">
         <header class="card__header">
           <h4 class="card-container__name">Tutor/Teacher</h3>
         </header>
@@ -92,8 +93,8 @@
         </div>
       </div>
     </div>
-    <div class="card-container card-container--center">
-      <div class="card card--secondary">
+    <div class="card-container card-container--center" >
+      <div class="card card--secondary" data-aos="zoom-in-up">
         <header class="card__header">
           <h4 class="card-container__name">Senso.AI</h3>
         </header>
@@ -110,7 +111,7 @@
       </div>
     </div>
     <div class="card-container">
-      <div class="card card--primary">
+      <div class="card card--primary" data-aos="zoom-in-up">
         <header class="card__header">
           <h4 class="card-container__name">TBA Coach</h4>
         </header>
@@ -125,7 +126,8 @@
       </div>
     </div>
   </div>
-  <div class="projects__beginning">
+  <div class="projects__beginning" data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
     <h3 class="left experience header-inline maintain-height">Projects</h3>
     <div class="button-section maintain-height">
       <h4 onclick="showPython()" id="python__button" class="projects__button">Python</h4>
@@ -288,7 +290,7 @@
   </div>
   <h3 class="left skills-header">Skills</h3>
   <div class="skills">
-    <div class="skills__grid">
+    <div class="skills__grid" >
 
       <div class="skills__box coding grid__title">
         <h5 class="grid__title__header">
@@ -300,9 +302,9 @@
       </div>
       <div class="skills__box coding grid__content">
         <ul class="skills__list">
-          <li class="skills__list__item"><wrap class="red">Python</wrap>, Java, <wrap class="red">SQL</wrap>, MATLAB, <wrap class="red">HTML</wrap>, CSS, <wrap class="red">JavaScript</wrap>, <wrap class="gold">React</wrap>, <wrap class="red">R</wrap>, BASH, <wrap class="red">PowerShell</wrap></li>
-          <li class="skills__list__item">Experience in automating emails, coding <wrap class="red">Microsoft Excel</wrap>/Google Sheets and <wrap class="red">Matplotlib</wrap></li>
-          <li class="skills__list__item">Have experience with <wrap class="red">neural networks</wrap> and <wrap class="gold">AI</wrap>. Have expereince optimizing using Numpy and Pandas</li>
+          <li class="skills__list__item"><wrap class="blue">Python</wrap>, Java, <wrap class="blue">SQL</wrap>, MATLAB, <wrap class="blue">HTML</wrap>, CSS, <wrap class="blue">JavaScript</wrap>, <wrap class="gold">React</wrap>, <wrap class="blue">R</wrap>, BASH, <wrap class="blue">PowerShell</wrap></li>
+          <li class="skills__list__item">Experience in automating emails, coding <wrap class="blue">Microsoft Excel</wrap>/Google Sheets and <wrap class="blue">Matplotlib</wrap></li>
+          <li class="skills__list__item">Have experience with <wrap class="blue">neural networks</wrap> and <wrap class="gold">AI</wrap>. Have expereince optimizing using Numpy and Pandas</li>
         </ul>
       </div>
       <div class="skills__box music grid__title">
@@ -313,8 +315,8 @@
       <div class="skills__box music grid__content">
       <ul class="skills__list">
         <li class="skills__list__item"><wrap class="gold">ARCT</wrap> level piano player</li>
-        <li class="skills__list__item">Have created <wrap class="red">commissioned</wrap> music for video games</li>
-        <li class="skills__list__item">Have experience with <wrap class="red">FL Studio</wrap> and <wrap class="red">GarageBand</wrap></li>
+        <li class="skills__list__item">Have created <wrap class="blue">commissioned</wrap> music for video games</li>
+        <li class="skills__list__item">Have experience with <wrap class="blue">FL Studio</wrap> and <wrap class="blue">GarageBand</wrap></li>
       </ul>
     </div>
 
@@ -349,9 +351,9 @@
       </div>
       <div class="skills__box awards grid__content">
         <ul class="skills__list">
-          <li class="skills__list__item"><wrap class="red">TEDx</wrap> Talk Presenter (on youth voting)</li>
+          <li class="skills__list__item"><wrap class="blue">TEDx</wrap> Talk Presenter (on youth voting)</li>
           <li class="skills__list__item">Duke of Edinburgh <wrap class="gold">Gold Award</wrap></li>
-          <li class="skills__list__item">DECA <wrap class="red">Provincial</wrap> Champion</li>
+          <li class="skills__list__item">DECA <wrap class="blue">Provincial</wrap> Champion</li>
         </ul>
       </div>
   </div>
@@ -360,6 +362,10 @@
   <script src="Components/collapsible.js"></script>
   <script src="Components/typescript/typescript.js"></script>
   <script type="text/JavaScript" src="Components/dropdown/dropdown.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- TODO: Make hidden divs not change where github image sends you and fix the fact that sometimes the link isn't attached to the icon? -->
   <!-- TODO: Make projects look better for mobile -->
   <!-- TODO: Make buttons work for mobile -->

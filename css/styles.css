@@ -637,6 +637,7 @@ h6 {
 .skills {
   display: flex;
   justify-content: center;
+  margin-bottom: 5vw;
 }
 
 .skills__grid {
@@ -701,9 +702,9 @@ h6 {
   padding-left: 0.5rem;
 }
 
-.red {
-  color: red;
-  text-shadow: 0 0 10px red;
+.blue {
+  color: rgb(75, 185, 221);
+  text-shadow: 0 0 10px lightblue;
 }
 
 .bronze {
