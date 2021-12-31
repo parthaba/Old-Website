@@ -25,14 +25,14 @@ TxtType.prototype.tick = function () {
   var delta = 200 - (Math.random() * 0.5 + 1) * 80;
 
   if (this.isDeleting) {
-    if (this.txt[0] === "L") {
+    if (this.txt[0] === "S") {
       delta /= 3;
     }
     delta /= 2;
   }
 
   if (!this.isDeleting && this.txt === fullTxt) {
-    if (this.txt[0] === "L") {
+    if (this.txt[0] === "S") {
       this.period = 200;
       this.hold = true;
     }

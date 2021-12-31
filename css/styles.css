@@ -462,6 +462,7 @@ a {
   list-style: none;
   padding-left: 21%;
   text-shadow: 0 0 10px #fff;
+  width: 70vw;
 }
 
 .list-odd {
@@ -560,12 +561,6 @@ h5 {
   margin: 1rem 0rem 1rem 0rem;
 }
 
-@media screen and (max-width: 768px) {
-  h5 {
-    font-size: 8vw;
-  }
-}
-
 h6 {
   font-size: 3vw;
   color: white;
@@ -577,7 +572,13 @@ h6 {
 .projects__header__text,
 .project-name {
   padding-left: 5%;
-  display: inline;
+  display: inline-block;
+}
+
+.project-name {
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .projects__body {
@@ -618,13 +619,60 @@ h6 {
 }
 
 .github-link {
-  display: inline-flex;
+  display: grid;
   align-items: center;
 }
 
 .center-github {
   display: inline-flex;
   vertical-align: text-bottom;
+}
+
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 8vw;
+  }
+
+  .projects__button {
+    font-size: 5.8vw;
+  }
+
+  .github-link {
+    display: block;
+    align-items: center;
+  }
+
+  .center-github {
+    vertical-align: middle;
+  }
+
+  .button-section {
+    align-self: center;
+  }
+
+  .projects__body__list {
+    list-style: none;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    text-shadow: 0 0 10px #fff;
+    font-size: 80%;
+  }
+
+  .list-item-two {
+    padding-left: 1%;
+  }
+
+  .list-item-three {
+    padding-left: 1%;
+  }
+
+  .list-item-four {
+    padding-left: 1%;
+  }
+
+  .projects__ul {
+    padding-left: 3%;
+  }
 }
 
 /* Skills Grid */
@@ -687,8 +735,8 @@ h6 {
 }
 
 .skills__list {
-  padding-top: 5vh;
-  padding-left: 5rem;
+  padding-top: 4vh;
+  padding-left: 3vw;
 }
 
 .skills__list__item {
@@ -697,7 +745,7 @@ h6 {
   color: white;
   text-shadow: 0px 0px 3px white;
   padding-top: 10px;
-  padding-left: 0.5rem;
+  padding-left: 0.3vw;
 }
 
 .blue {
@@ -741,8 +789,12 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .grid__title__header {
+    padding-top: 28vw;
+  }
+
   .skills__grid {
-    grid-template-rows: repeat(5, 36vh);
+    grid-template-rows: repeat(5, 80vw);
     grid-template-columns: 80vw;
     box-shadow: 0 0 30px white;
     grid-template-areas:
@@ -764,10 +816,19 @@ h6 {
   .coding {
     font-size: 2.8vw;
   }
+
   .skills__list__item {
     padding-left: 0rem;
   }
+
   .skills__list {
-    padding-left: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 16vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .skills__list__item {
+    list-style-image: url(../images/chevron-right-small.svg);
   }
 }
