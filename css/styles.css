@@ -206,7 +206,8 @@ a {
   color: rgb(50, 50, 80);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
   background: rgb(245, 145, 220);
 }
 
@@ -265,7 +266,8 @@ a {
   transition: transform 0.5s;
 }
 
-.card-container:hover {
+.card-container:hover,
+.card-container:active {
   transform: scale(1.07);
 }
 .traderauto {
@@ -546,7 +548,8 @@ a {
   text-shadow: 0 0 10px lightblue;
 }
 
-.projects__button:hover {
+.projects__button:hover,
+.projects__button:active {
   color: var(--color-heading-two-b);
   text-shadow: 0 0 10px var(--color-heading-two-b);
   transition: all 0.3s;
@@ -726,7 +729,8 @@ h6 {
   transition: all 0.3s;
 }
 
-.grid__title:hover {
+.grid__title:hover,
+.grid__title:active {
   opacity: 0;
 }
 
