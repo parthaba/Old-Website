@@ -266,11 +266,11 @@ a {
 }
 
 .card-container:hover {
+  transform: scale(107%);
   -ms-transform: scale(107%);
   -webkit-transform: scale(107%);
   -moz-transform: scale(107%);
   -o-transform: scale(107%);
-  transform: scale(107%);
 }
 .traderauto {
   text-decoration: underline;
@@ -509,14 +509,16 @@ a {
   opacity: 0;
   width: 80%;
   max-height: 0;
+  transform: scale(0%);
   -ms-transform: scale(0%);
   -webkit-transform: scale(0%);
   -moz-transform: scale(0%);
   -o-transform: scale(0%);
-  transform: scale(0%);
   transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
-    max-height 50ms 0.2s linear;
-  -webkit-transition: transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -ms-transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -moz-transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -o-transform 0.7s cubic-bezier(0.075, 0.82, 0.165, 1),
     max-height 50ms 0.2s linear;
   margin-top: 0.5rem;
   padding: 0;
@@ -526,14 +528,16 @@ a {
   opacity: 1;
   max-height: 100vh;
   transition: transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -ms-transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -webkit-transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -moz-transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    -o-transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
     max-height 50ms linear, width 0.2s linear, height 0.2s linear;
-  -webkit-transition: transform 0.7s 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
-    max-height 50ms linear, width 0.2s linear, height 0.2s linear;
+  transform: scale(100%);
   -ms-transform: scale(100%);
   -webkit-transform: scale(100%);
   -moz-transform: scale(100%);
   -o-transform: scale(100%);
-  transform: scale(100%);
 }
 
 .button-section {
